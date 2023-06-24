@@ -24,8 +24,10 @@ const filters = [
 ]
 
 export function ProductFilters() {
-  const searchParams = useSearchParams()
   const router = useRouter()
+  const searchParams = useSearchParams()
+  const searchValues = Array.from(searchParams.entries())
+  
 
   return (
     <form className="sticky top-20">
@@ -47,7 +49,9 @@ export function ProductFilters() {
                     key={option.value}
                     className="flex items-center space-x-2"
                   >
-                    <Checkbox id={`filter-${section.id}-${optionIdx}`} onClick={(event) => {
+                    <Checkbox id={`filter-${section.id}-${optionIdx}`} 
+                    checked={searchValues.some(([key, value]) => key === section.id && value === option.value)}
+                    onClick={(event) => {
                        const params = new URLSearchParams(searchParams)
                        const checked = event.currentTarget.dataset.state === "checked"
                        checked ? params.delete(section.id) : params.set(section.id, option.value)

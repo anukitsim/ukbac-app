@@ -9,12 +9,23 @@ import { ProductFilters } from "@/components/product-filters"
 import { ProductGrid } from "@/components/product-grid"
 
 
-interface Props {}
+interface Props {
+  searchParams: {
+    category?: string
 
-export default async function Shop() {
+
+  }
+}
+
+export default async function Shop({ searchParams }: Props) {
+  const { category } = searchParams
+  const productFilter = `_type == "product"`
+  const categoryFilter = category ? `&& "${category}" in categories` : ''
+  const filter = `*[${productFilter}${categoryFilter}]`
+  
   const products = await client.fetch<
     SanityProduct[]
-  >(groq`*[_type == "product"]{
+  >(groq`${filter}{
     _id,
     _createdAt,
     name,
