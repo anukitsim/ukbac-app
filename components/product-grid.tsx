@@ -29,7 +29,7 @@ export function ProductGrid({ products }: Props) {
   }
 
   return (
-    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-3 lg:gap-x-8">
+    <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-3 lg:col-span-10 lg:gap-x-8">
       {products.map((product) => (
         <Link
           key={product._id}

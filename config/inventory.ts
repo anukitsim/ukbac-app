@@ -9,7 +9,7 @@ interface InventoryProduct {
 
   price: number
   currency: string
- 
+  sizes: string[]
   sku: string
 }
 
@@ -31,11 +31,12 @@ export const inventory: InventoryProduct[] = [
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
     images: [
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
+      "https://freesvg.org/img/1286146771.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
     ],
 
     categories: ["kupalnikebi"],
+    sizes: ["xs", "s", "m", "l"],
 
     currency: "USD",
   },
@@ -49,12 +50,12 @@ export const inventory: InventoryProduct[] = [
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
     images: [
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
+      "https://freesvg.org/img/1286146771.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
     ],
  
     categories: ["kupalnikebi"],
-   
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -66,11 +67,11 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
     images: [
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
+      "https://freesvg.org/img/1286146771.png",
     ],
    
     categories: ["kupalnikebi"],
-   
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -82,11 +83,11 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
     images: [
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
+      "https://freesvg.org/img/1286146771.png0",
     ],
     
     categories: ["kupalnikebi"],
-
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -98,12 +99,12 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
     images: [
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
-      "https://imageio.forbes.com/specials-images/imageserve/5ed6636cdd5d320006caf841/The-Blackout-Tuesday-movement-is-causing-Instagram-feeds-to-turn-black-/960x0.jpg?format=jpg&width=960",
+      "https://freesvg.org/img/1286146771.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
     ],
    
     categories: ["kupalnikebi"],
-  
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -119,7 +120,7 @@ export const inventory: InventoryProduct[] = [
     ],
     
     categories: ["kalgotkebi"],
-   
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -131,11 +132,11 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
     images: [
-      "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
     ],
   
     categories: ["kalgotkebi"],
-
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -147,12 +148,12 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
     images: [
-      "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
       "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
     ],
    
-    categories: ["sunglasses"],
-  
+    categories: ["kalgotkebi"],
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
   {
@@ -164,11 +165,11 @@ export const inventory: InventoryProduct[] = [
     image:
       "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
     images: [
-      "https://www.nj.com/resizer/UF6-3JBUiF5bPmmZ0fqXCnOEzEU=/1280x0/smart/arc-anglerfish-arc2-prod-advancelocal.s3.amazonaws.com/public/ELE2VGM36FEQXEZVWW5MVKM52A.png",
+      "https://images.fineartamerica.com/images/artworkimages/mediumlarge/2/dark-green-square-thomas-woolworth.jpg",
     ],
   
-    categories: ["sunglasses"],
-  
+    categories: ["kalgotkebi"],
+    sizes: ["xs", "s", "m", "l"],
     currency: "USD",
   },
 ]

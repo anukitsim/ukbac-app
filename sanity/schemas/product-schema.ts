@@ -33,6 +33,13 @@ export const product = defineType({
            
         }),
         defineField({
+            name: "sizes",
+            title: "Sizes",
+            type: "array",
+            of: [{ type: 'string' }]
+           
+        }),
+        defineField({
             name: "sku",
             title: "SKU",
             type: "string",   
