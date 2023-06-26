@@ -27,7 +27,7 @@ export function CartItems() {
       variant: "destructive",
       style: {
         backgroundColor: "white", 
-        color: "black" 
+        color: "black"  
       }
     })
   }
